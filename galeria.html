@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Nossa História</title>
+    <link rel="shortcut icon" href="icon.png" type="icon">
+</head>
+
+<body>
+
+
+    <nav>
+        <div class = "heart"></div>
+        <div class="logo">
+            
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+           <li><a class="active" href="galeria.html">Galeria </a></li>
+           <li><a href="index.html">Home</a></li>
+         
+        </ul>
+     </nav>
+     <CENTER>
+     <div class="CT">
+   <H1>Aguarde...</H1>
+  </div>
+</CENTER>
+    <script>
+        let nav = document.querySelector("nav");
+          window.onscroll = function() {
+            if(document.documentElement.scrollTop > 20){
+              nav.classList.add("sticky");
+            }else {
+              nav.classList.remove("sticky");
+            }
+          }
+        </script>
+</body>
+ 
+
+</html>
